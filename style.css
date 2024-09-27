@@ -1,10 +1,12 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
+/* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
     color: #003049;
     font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
     padding: 40px;
+    background-color: #eae2b7;
+    /* Background color based on requirements */
 }
 
 /* Set the font family for any h1, h2, or h3 heading */
@@ -17,9 +19,16 @@ h3 {
 
 h2 {
     font-size: 2em;
+    /* Larger font size for h2 headings */
     margin-bottom: 10px;
 }
 
+h3 {
+    font-size: 1.5em;
+    /* Smaller font size for h3 subheadings */
+}
+
+/* Navigation styling */
 nav {
     display: flex;
     justify-content: center;
@@ -29,33 +38,29 @@ nav ul {
     list-style: none;
     /* Remove bullets */
     padding: 0;
-    /* Remove padding */
 }
 
 nav ul li {
     display: inline-block;
-    /* Display list items inline */
     margin-right: 30px;
-    /* Add margin between items */
 }
 
 nav ul li:last-child {
     margin-right: 0;
-    /* Remove margin from the last item */
 }
 
 nav ul li a {
     text-decoration: none;
-    /* Remove underline from links */
-    color: purple;
-    /* Set the link color */
+    color: #662828;
+    /* Color specified in requirements */
 }
 
 nav ul li a:hover {
-    color: red;
-    /* Optional: Change color on hover */
+    color: #f77f00;
+    /* Hover color as per requirements */
 }
 
+/* Article styling */
 article {
     padding: 50px 0;
 }
@@ -69,11 +74,6 @@ p {
     line-height: 1.5;
 }
 
-h2 {
-    font-size: 50%;
-}
-
-/* The div container constrains the content width within the main container to 600px */
 div {
     margin: auto;
     width: 600px;
@@ -88,10 +88,57 @@ img {
     margin: 0 auto;
 }
 
+#about {
+    width: 600px;
+    /* Set a reasonable width for the content */
+    margin: 0 auto;
+    /* Center the section horizontally */
+    padding: 20px 0;
+    /* Add some padding to the top and bottom */
+}
+
+#about h2,
+#about h3 {
+    text-align: center;
+    /* Center the headings */
+}
+
+#about p {
+    text-align: left;
+    /* Align paragraphs to the left */
+}
+
+.image-circle {
+    display: block;
+    margin: 20px auto;
+    /* Center the image and add vertical space */
+    border-radius: 50%;
+    border: 2px solid #003049;
+}
+
+/* Circle image with border */
+.image-circle {
+    border-radius: 50%;
+    /* Make the image circular */
+    border: 2px solid #003049;
+    /* Add border with the specified color */
+}
+
 hr {
     border: 1px solid black;
 }
 
-/* Add your solution below */
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
 
-.image-circle {}
+/* Additional link styling */
+a:link {
+    color: #662828;
+}
+
+a:hover {
+    color: #f77f00;
+}
