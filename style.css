@@ -21,7 +21,39 @@ h2 {
 }
 
 nav {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Remove padding */
+}
+
+nav ul li {
+    display: inline-block;
+    /* Display list items inline */
+    margin-right: 30px;
+    /* Add margin between items */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    /* Remove margin from the last item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* Remove underline from links */
+    color: purple;
+    /* Set the link color */
+}
+
+nav ul li a:hover {
+    color: red;
+    /* Optional: Change color on hover */
 }
 
 article {
