@@ -18,7 +18,7 @@ h3 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     /* Larger font size for h2 headings */
     margin-bottom: 10px;
 }
@@ -136,7 +136,7 @@ footer {
 
 /* Additional link styling */
 a:link {
-    color: #662828;
+    color: #d62828;
 }
 
 a:hover {
